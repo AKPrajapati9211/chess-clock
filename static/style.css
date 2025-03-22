@@ -19,6 +19,18 @@ body {
     max-width: 400px; /* Smartphone size */
 }
 
+/* Rotate the upper timer text to be readable from the top */
+#player1-clock .time,
+#player1-clock .clicks {
+    transform: rotate(180deg); /* Rotate text 180 degrees */
+}
+
+/* Rotate the lower timer text to be readable from the bottom */
+#player2-clock .time,
+#player2-clock .clicks {
+    transform: rotate(0deg); /* No rotation (default) */
+}
+
 .clock {
     font-size: 3em;
     padding: 20px;
