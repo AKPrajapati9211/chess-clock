@@ -48,6 +48,18 @@ body {
     opacity: 0.6;
 }
 
+/* Rotate the upper timer text to be readable from the top */
+#player1-clock .time,
+#player1-clock .clicks {
+    transform: rotate(180deg); /* Rotate text 180 degrees */
+}
+
+/* Rotate the lower timer text to be readable from the bottom */
+#player2-clock .time,
+#player2-clock .clicks {
+    transform: rotate(0deg); /* No rotation (default) */
+}
+
 .clock.timeout {
     background-color: #ff4444; /* Red for timeout */
 }
