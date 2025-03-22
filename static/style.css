@@ -37,6 +37,22 @@ body {
     transition: background-color 0.3s ease;
 }
 
+/* Disable text selection on the timer elements */
+.clock {
+    user-select: none; /* Standard property */
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+/* Ensure the text inside the timers is also not selectable */
+.clock .time,
+.clock .clicks {
+    user-select: none; /* Standard property */
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
 .clock.active {
     background-color: #444; /* Light gray for active player */
 }
