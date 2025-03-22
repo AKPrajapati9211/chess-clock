@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Clock</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="player1-clock" class="clock" onclick="switchPlayer()">
+            <div class="time" style="font-size: 3em;">10:00</div>
+            <div class="clicks" style="font-size: 1em;">Moves: 0</div>
+        </div>
+        <div class="controls">
+            <button id="start-pause-btn">Start</button>
+            <button id="reset-btn">Reset</button>
+            <button id="set-time-btn">Set Time</button>
+        </div>
+        <div id="player2-clock" class="clock" onclick="switchPlayer()">
+            <div class="time" style="font-size: 3em;">10:00</div>
+            <div class="clicks" style="font-size: 1em;">Moves: 0</div>
+        </div>
+        <div>By <a href="https://www.linkedin.com/in/ankit-kumar-prajapati-8b0443237" target="_blank">Ankit Kumar Prajapati</a></div>
+    </div>
+
+    <!-- Popup for Time Control -->
+    <div id="time-control-popup" class="popup">
+        <div class="popup-content">
+            <h2>Set Time Control</h2>
+            <label for="player1-minutes">Player 1 Minutes:</label>
+            <input type="number" id="player1-minutes" value="10" min="0">
+            <label for="player1-seconds">Seconds:</label>
+            <input type="number" id="player1-seconds" value="0" min="0">
+            <br>
+            <label for="player2-minutes">Player 2 Minutes:</label>
+            <input type="number" id="player2-minutes" value="10" min="0">
+            <label for="player2-seconds">Seconds:</label>
+            <input type="number" id="player2-seconds" value="0" min="0">
+            <br>
+            <label for="increment">Increment (seconds):</label>
+            <input type="number" id="increment" value="0" min="0">
+            <br>
+            <button id="apply-settings">Apply</button>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
