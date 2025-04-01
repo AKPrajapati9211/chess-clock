@@ -18,7 +18,6 @@ A web-based chess clock application built with **Flask**, **HTML**, **CSS**, and
 - **Backend**: Flask (Python)
 - **Frontend**: HTML, CSS, JavaScript
 - **Styling**: Flexbox for responsive design
-- **Deployment**: GitHub Pages (for static version) or Heroku (for Flask version)
 
 ---
 
