@@ -85,7 +85,6 @@ def update_settings():
 
     return jsonify({'status': 'settings updated'})
 
-
 @app.route('/reset')
 def reset():
     global player1_time, player2_time, current_player, is_running, player1_clicks, player2_clicks
